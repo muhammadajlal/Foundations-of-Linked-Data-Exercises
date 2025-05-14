@@ -1,0 +1,27 @@
+@prefix : <#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:manuel_neuer
+    :name "Manuel Neuer"^^xsd:string ;
+    :occupation :FootballPlayer ;
+    :plays_for :FCB ;
+    :sport_number "1"^^xsd:integer ;
+    :position :goalkeeper ;
+    :date_of_birth "1986-03-27"^^xsd:date ;
+    :nationality :DEU ;
+    :dominant_foot :Right ;
+    :height [ :value "193"^^xsd:integer ; :unit "cm"^^xsd:string ] ;
+    :weight [ :value "93"^^xsd:integer ; :unit "kg"^^xsd:string ] .
+
+:FCB
+    :plays_in :Bundesliga ;
+    :name "FC Bayern München"@de ;
+    :home_venue :AllianzArena .
+
+:Bundesliga 
+    :name "Fußball-Bundesliga"@de .
+
+:FCA
+    :plays_in :Bundesliga ;
+    :name "FC Augsburg"@de .
+
