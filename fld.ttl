@@ -2,26 +2,26 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :manuel_neuer
-    :name "Manuel Neuer"^^xsd:string ;
-    :occupation :FootballPlayer ;
-    :plays_for :FCB ;
-    :sport_number "1"^^xsd:integer ;
-    :position :goalkeeper ;
-    :date_of_birth "1986-03-27"^^xsd:date ;
-    :nationality :DEU ;
-    :dominant_foot :Right ;
-    :height [ :value "193"^^xsd:integer ; :unit "cm"^^xsd:string ] ;
-    :weight [ :value "93"^^xsd:integer ; :unit "kg"^^xsd:string ] .
+    :name "Manuel Neuer"^^xsd:string ;                                       # (a)
+    :occupation :FootballPlayer ;                                            # (b)
+    :plays_for :FCB ;                                                        # (c)
+    :sport_number "1"^^xsd:integer ;                                         # (d)
+    :position :goalkeeper ;                                                  # (e)
+    :date_of_birth "1986-03-27"^^xsd:date ;                                  # (f)     
+    :nationality :DEU ;                                                      # (g)
+    :dominant_foot :Right ;                                                  # (h)
+    :height [ :value "193"^^xsd:integer ; :unit "cm"^^xsd:string ] ;         # (i)
+    :weight [ :value "93"^^xsd:integer ; :unit "kg"^^xsd:string ] .          # (j)
 
 :FCB
-    :plays_in :Bundesliga ;
-    :name "FC Bayern München"@de ;
-    :home_venue :AllianzArena .
+    :plays_in :Bundesliga ;                                                  # (A)
+    :name "FC Bayern München"@de ;                                           # (B)
+    :home_venue :AllianzArena .                                              # (C)
 
 :Bundesliga 
-    :name "Fußball-Bundesliga"@de .
+    :name "Fußball-Bundesliga"@de .                                          # (D)
 
 :FCA
-    :plays_in :Bundesliga ;
-    :name "FC Augsburg"@de .
+    :plays_in :Bundesliga ;                                                  # (E)
+    :name "FC Augsburg"@de .                                                 # (F)
 
