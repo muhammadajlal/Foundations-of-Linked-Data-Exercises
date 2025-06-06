@@ -1,0 +1,7 @@
+SELECT ?s ?p ?o
+WHERE {
+  ?s ?p ?o
+}
+ORDER BY DESC(?s) ASC(?p)
+OFFSET 7
+LIMIT 1

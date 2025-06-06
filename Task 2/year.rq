@@ -1,0 +1,9 @@
+BASE <https://paul.ti.rw.fau.de/~uq25ywiq/fld.ttl>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (SUBSTR(STR(?date), 1, 4) AS ?year)
+WHERE {
+  ?s <#date_of_birth> ?date .
+}
+
+

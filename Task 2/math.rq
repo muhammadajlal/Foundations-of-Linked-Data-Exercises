@@ -1,0 +1,3 @@
+SELECT (ROUND(ABS((91054 * -3) / 33)) AS ?value)
+WHERE {
+}

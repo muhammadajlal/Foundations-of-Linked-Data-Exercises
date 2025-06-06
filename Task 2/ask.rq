@@ -1,0 +1,6 @@
+BASE <https://paul.ti.rw.fau.de/~uq25ywiq/fld.ttl>
+
+ASK {
+  ?team <#name> "Borussia Dortmund"@de .
+}
+

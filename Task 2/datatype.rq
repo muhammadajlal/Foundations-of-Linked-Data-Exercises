@@ -1,0 +1,7 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?label
+WHERE {
+  ?s ?p ?label .
+  FILTER (datatype(?label) = xsd:integer || datatype(?label) = xsd:decimal)
+}

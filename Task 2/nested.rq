@@ -1,0 +1,4 @@
+SELECT (COUNT(*) AS ?num)
+WHERE {
+  { SELECT * WHERE { ?s ?p ?o } }
+}

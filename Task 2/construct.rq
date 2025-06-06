@@ -1,0 +1,10 @@
+BASE <https://paul.ti.rw.fau.de/~uq25ywiq/fld.ttl>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+  ?s <#sport_number> ?new_number .
+}
+WHERE {
+  ?s <#sport_number> ?old_number .
+  BIND((?old_number + 23) AS ?new_number)
+}
