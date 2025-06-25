@@ -1,0 +1,32 @@
+@prefix : <./fld.ttl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+
+# Instance mappings
+:manuel_neuer owl:sameAs wd:Q107365 .
+:FCB owl:sameAs wd:Q15789 .
+:FCA owl:sameAs wd:Q15755 .
+:Bundesliga owl:sameAs wd:Q82595 .
+:goalkeeper owl:sameAs wd:Q201330 .
+:DEU owl:sameAs wd:Q183 .
+:Right owl:sameAs wd:Q1843233 .
+:AllianzArena owl:sameAs wd:Q127429 .
+:cm owl:sameAs unit:CentiM .
+:kg owl:sameAs unit:KiloGM .
+
+# Property mappings
+:name rdfs:subPropertyOf foaf:name .
+:plays_for rdfs:subPropertyOf wd:P54 .
+:sport_number rdfs:subPropertyOf wd:P1618 .
+:position rdfs:subPropertyOf wd:P413 .
+:date_of_birth rdfs:subPropertyOf wd:P569 .
+:nationality rdfs:subPropertyOf wd:P27 .
+:dominant_foot rdfs:subPropertyOf wd:P8006 .
+:value rdfs:subPropertyOf rdf:value .
+:unit rdfs:subPropertyOf wd:P8111 .
+:home_venue rdfs:subPropertyOf wd:P115 .
+:plays_in rdfs:subPropertyOf wd:P118 .
